@@ -1,0 +1,372 @@
+:root {
+	--mainColor: rgb(233, 159, 0);
+}
+
+@font-face {
+	font-family: 'CardenioModern-Regular';
+	src: url('polices/CardenioModern-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Renner_ 400 Book';
+	src: url('polices/Renner_ 400 Book.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fair-Prosper';
+	src: url('polices/Fair-Prosper.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+	
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(233, 233, 233);
+}
+
+header {
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	align-items: center;
+	background: var(--mainColor) url("img/logo-new2.png") no-repeat;
+	background-position-x: -100px;
+	background-position-y: center;
+	background-size: 50%;
+	border-radius: 5px;
+	border: 0px;
+	gap: 10px;
+	max-height: 90px;
+	min-height: 90px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+	margin-bottom: 5px;
+	padding-top:30px;
+}
+
+header, header a {
+	color: rgb(255, 255, 255);
+	font-family: "CardenioModern-Regular";
+}
+
+h1 {
+	font-family: "Fair-Prosper";
+	color: rgb(255, 255, 255);
+	flex: auto;
+	font-size: 4.5em;
+	margin: 0px;
+	text-shadow: 0px 4px 4px rgb(87, 62, 25);
+	min-height: 70px;
+	max-height: 70px;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	flex: 1;
+	font-size: 1.6em;
+}
+
+li a {
+	color: rgb(255, 229, 172);
+}
+
+li a:hover {
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex: auto;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.541);
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	overflow-y: auto;
+}
+
+#aboutMe p {
+	text-align: justify;
+}
+
+#articleBlocks {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+	width: 95%;
+	background-color: rgb(230, 230, 230);
+	padding: 10px 10px 0px 10px;
+	background: linear-gradient(white, white) padding-box,
+				linear-gradient(to top, var(--mainColor) 0%, rgb(255, 255, 255) 80%, rgb(255,255,255) 100%) border-box;
+	border: 2px solid transparent;
+	border-radius: 5px;
+}
+
+.blockTxt {
+	text-align: justify;
+}
+
+.blockLink {
+	text-align: end;
+	font-style: italic;
+	max-width: 80px;
+	align-self: flex-end;
+}
+
+.blockLink a, #goBackButton a {
+	color: var(--mainColor);
+	text-decoration: none;
+}
+
+.blockLink a:visited {
+	color: rgb(148, 137, 112);
+}
+
+.blockLink a:hover {
+	text-decoration: underline;
+}
+
+h2, h3 {
+	margin-top: 0px;
+	font-family: "CardenioModern-Regular";
+	font-size: 2.5em;
+	color: rgb(202, 138, 0);
+	margin-top: 3px;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+hr {
+	width: 99%;
+}
+
+#goBackButton {
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	margin-top: 15px;
+	gap: 5px;
+	max-width: 192px;
+	padding: 5px;
+	padding-top: 7px;
+	border-radius: 5px;
+	background: linear-gradient(white, white) padding-box,
+				linear-gradient(to top, var(--mainColor) 0%, rgba(9,9,121,0) 80%, rgb(255,255,255) 100%) border-box;
+	border: 2px solid transparent;
+}
+
+#goBackButton p {
+	margin: 0px;
+}
+
+aside {
+	flex: 1;
+	overflow-y: auto;
+	border-radius: 5px;
+	background-color: rgb(248, 248, 248);
+}
+
+aside div p {
+	background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)) padding-box,
+				linear-gradient(to top, var(--mainColor) 0%, rgba(9,9,121,0) 80%, rgba(255, 255, 255, 0) 100%) border-box;
+	border: 2px solid transparent;
+	color: var(--mainColor);
+	font-family: "CardenioModern-Regular";
+	text-align: center;
+	font-size: 2em;
+	border-radius: 7px;
+}
+
+#commentsTitle p {
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
+	font-size: 0.7em;
+}
+
+.socialNetworkLogo {
+	display: flex;
+	flex-direction: row;
+	flex: auto;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	opacity: 50%;
+}
+
+#astronomy {
+	margin-bottom: 15px;
+}
+
+#astronomy p {
+	align-items: center;
+	margin: 0px;
+}
+
+.astroTxtBig {
+	color: var(--mainColor);
+}
+
+.small {
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50px;
+	filter: grayscale(1);
+   	transition: all .2s;
+}
+
+.small:hover {
+	border-radius: 10px;
+	filter: grayscale(0);
+   	transition: all .2s;
+	cursor: zoom-in;
+}
+
+.big {
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.507);
+	filter: grayscale(0);
+	border-radius: 4px;
+}
+
+.big:hover {
+	cursor: zoom-out;
+}
+
+.astronomySmall {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	flex-direction: row;
+}
+
+.astronomyBig {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	flex-direction: column;
+}
+
+.embedItems {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.twitter-tweet {
+	display: flex;
+	justify-content: center;
+}
+
+#articleTweets {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.youTubeBlock, .gameBlock, .twitter-tweet {
+	border-radius: 12px;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.486);
+}
+
+.contener_slideshow {
+	width:100%;
+	height:100px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 4px;
+}
+
+.slid_1, .slid_2, .slid_3 {
+	position: absolute;
+	width:100%;
+	height:150px;
+	background-size: fill;
+}
+
+.slid_1{top: -10px;}
+.slid_2{top: 120px;}
+.slid_3{top: 260px;}
+
+.contener_slide {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	animation-name: anim_slide;
+}
+
+@keyframes anim_slide {
+	0% {top:-10px;}
+	22% {top:-10px;}
+	33% {top:-150px;}
+	45% {top:-150px;}
+	66% {top:-290px;}
+	90% {top:-290px;}
+	100% {top: -10px}
+}
+
+#headerNavAndSocial {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-content: center;
+}
+
+.right {
+	display: flex;
+	flex: 1;
+	gap: 5px;
+	flex-direction: row;
+	width: 90%;
+	justify-content: flex-end;
+}
+
+#empty{flex: 1;}
+
+@media screen and (max-width: 600px) {
+	#articleBlocks {
+		flex-direction: column;
+		align-items: center;
+	}
+	h1 {font-size: 2.8em;}
+}
+
+@media screen and (max-width: 414px) {
+	h1 {
+		font-size: 2.2em;
+		max-height: 40px;
+		min-height: 40px;
+	}
+	#headerNavAndSocial {
+		flex-direction: column;
+		gap: 7px;
+	}
+	ul{font-size: 1.4em;}
+	.right{justify-content: center;}
+}
+
+/* simplon aston */
